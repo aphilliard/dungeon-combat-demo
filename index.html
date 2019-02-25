@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>RPG Battle</title>
+  <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+<div class="content">
+    <p>
+        <img src="knight.png" id="knight" height="150px" width="150px">
+        <img src="choice.png" id="pmove" height="100px" width="100px">
+    </p>
+    <p>
+        <img src="dragon.png" id="dragon" height="150px" width="150px">
+        <img src="choice.png" id="cmove" height="100px" width="100px">
+    </p>
+    <p>
+        
+        <a href="#" onclick="playRound('attack'); playSound('sword')"><img class="zoom" src="attack.png" height="100px" width="100px"></a>
+        <a href="#" onclick="playRound('defend'); playSound('defend')"><img class="zoom" src="defend.png" height="100px" width="100px"></a>
+        <a href="#" onclick="playRound('pray'); playSound('pray')"><img class="zoom" src="pray.png" height="100px" width="100px"></a>
+        
+    </p>
+
+    <p>Knight HP: <span id="knightHealth">Knight HP</span></p>
+    <p>Dragon HP: <span id="dragonHealth">Dragon HP</span></p>
+    <p id="pmoveText">Player</p>
+    <p id="cmoveText">Computer</p>
+    <p id="kresult">Result</p>
+    <p id="dresult">Result</p>
+    <p id="result">Result</p>
+
+</div>
+
+<script  src="index.js"></script>
+</body>
